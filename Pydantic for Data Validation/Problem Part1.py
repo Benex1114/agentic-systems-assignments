@@ -24,7 +24,7 @@ class UserRegister(BaseModel):
     @classmethod
     def age_less_than_18(cls, value: int) -> int:
         if value < 18:
-            raise ValueError('Age msut be atleast 18')
+            raise ValueError('Age must be atleast 18')
         return value
 try:
     username = input("Enter Username: ")
