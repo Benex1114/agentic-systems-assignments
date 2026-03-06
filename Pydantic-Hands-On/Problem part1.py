@@ -43,7 +43,7 @@ class User(BaseModel):
         if value < 18:
             raise ValueError('Age must be atleast 18')
         return value
-        
+
 #Sample data for testing (This data does not give errors)
 try:
     data = {
